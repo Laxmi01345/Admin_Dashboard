@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Admin Dashboard with Role-Based Access Control (RBAC)
 
-## Getting Started
+This project implements an **Admin Dashboard** for a **Role-Based Access Control (RBAC)** system using **Next.js** and **Tailwind CSS**. The dashboard provides an intuitive interface for managing users, roles, and permissions.
 
-First, run the development server:
+## **Core Requirements**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 1. **User Management:**
+- **View and Manage Users:**  
+  The dashboard allows administrators to view all users in the system and manage their details efficiently.
+  
+- **Add, Edit, or Delete Users:**  
+  Admins can add new users, update their information (such as name, email, role), or remove users from the system.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- **Assign Roles and Manage Status:**  
+  Administrators can assign roles to users and manage their status (e.g., Active or Inactive) to control access rights within the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 2. **Role Management:**
+- **Define and Edit Roles:**  
+  Admins can create new roles and modify existing roles to define what permissions should be associated with each role.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Permissions and Custom Attributes:**  
+  Roles can be customized to include predefined permissions such as **Read**, **Write**, and **Delete**, or custom attributes that reflect specific access levels or capabilities.
 
-## Learn More
+### 3. **Dynamic Permissions:**
+- **Assign or Modify Permissions for Roles:**  
+  The system allows administrators to assign, modify, or remove permissions for specific roles, providing flexibility in access control.
 
-To learn more about Next.js, take a look at the following resources:
+- **Clear Display of Permissions:**  
+  Permissions are displayed clearly for easy understanding and modification, enabling administrators to manage access with ease.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## **Features**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Sidebar Navigation**: Seamless navigation between different sections of the dashboard.
+- **Dashboard Overview**: Displays key statistics, recent activities, and quick actions.
+- **User Management**: Add, update, or delete users and assign roles.
+- **Role Management**: Define roles and modify their permissions.
+- **Responsive Design**: Mobile-friendly layout that adjusts to various screen sizes.
+- **Dark Mode**: Toggle between light and dark themes for user convenience.
 
-## Deploy on Vercel
+## **Tech Stack**
+- **Frontend**: Next.js, React.js
+- **Styling**: Tailwind CSS
+- **State Management**: React Context (or similar for state management)
+- **Language**: TypeScript
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
